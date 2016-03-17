@@ -44,18 +44,18 @@ For this step, our process was similar to the step above, with the exception of 
 * <b>TEXT MINING:</b>
 In the dataset, we found that there is a field called summary that contains a small write up about the crash. We thought that we could use this for text mining, and cluster similar air crashes.
 
-First, we performed the following pre processing:
- •  Tokenization
- • Removal of punctuation
- • Stemming (keeping only the stem of the word: fog -> fog, fogginess -> fog, foggy->fog)
+  *First, we performed the following pre processing:
+    •  Tokenization
+    • Removal of punctuation
+    • Stemming (keeping only the stem of the word: fog -> fog, fogginess -> fog, foggy->fog)
 
-Then, we represented each summary as word frequencies and used a TF-IDF representation of features. We will not go into detail about this as it is out of the scope of this course, but we can get an idea from the imager below (each summary was represented using these “tables”).
+  * Then, we represented each summary as word frequencies and used a TF-IDF representation of features. We will not go into detail about this as it is out of the scope of this course, but we can get an idea from the imager below (each summary was represented using these “tables”).
 
-Once we had these TF-IDF vector representations of each air crash, we could then use a method called cosine similarity, between each pair of crashes. Cosine similarity again, in simplicity, yields number between zero and one. After computing for all, we get a 5300x5300 matrix (as 5300 records had summaries). Since it is a similarity measure, but clustering methods require distance measures, we convert similarity to “dissimilarity” by using the equation below:
+  * Once we had these TF-IDF vector representations of each air crash, we could then use a method called cosine similarity, between each pair of crashes. Cosine similarity again, in simplicity, yields number between zero and one. After computing for all, we get a 5300x5300 matrix (as 5300 records had summaries). Since it is a similarity measure, but clustering methods require distance measures, we convert similarity to “dissimilarity” by using the equation below:
 
-Distance measure = 1 – CosineSimilarity(tfidf_matrix)
+                   Distance measure = 1 – CosineSimilarity(tfidf_matrix)
 
-After this, we created a Ward’s Linkage Matrix, and used that for hierarchical clustering and created a dendrogram. We cut the dendrogram at a distance of 28 by trial and error, as we wanted roughly twenty clusters. The code is also attached [Part 3].
+  * After this, we created a Ward’s Linkage Matrix, and used that for hierarchical clustering and created a dendrogram. We cut the dendrogram at a distance of 28 by trial and error, as we wanted roughly twenty clusters. The code is also attached [Part 3].
 
 ## REQUIREMENTS:
 * Ipython Notebook Server (WinPython for Windows/Anaconda for Linux recommended)
