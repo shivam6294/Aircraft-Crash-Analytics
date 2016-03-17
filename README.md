@@ -17,6 +17,16 @@ Through this project, we have explained in detail, the methodology and tools use
 
 ## System Architecture: 
 <img src = "System_Architecture.PNG">
+
+The system architecture of our project is shown in the figure above. The following are the of
+the components that were used:
+ Data Collection: Python
+ Data Storage: MongoDB
+ Data Wrangling: Python, Google Geocoding API
+ Data Mining: Python (Packages used: Pandas for loading data into memory, IPython
+Notebook for interactive analysis, and SciPy for scientific and statistical functions)
+ Visualization: HTML, CSS, JavaScript
+
 ENJOY!!
 
 ## REQUIREMENTS:
