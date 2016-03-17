@@ -44,7 +44,7 @@ For this step, our process was similar to the step above, with the exception of 
 * <b>TEXT MINING:</b>
 In the dataset, we found that there is a field called summary that contains a small write up about the crash. We thought that we could use this for text mining, and cluster similar air crashes.
 
-  *First, we performed the following pre processing:
+  * First, we performed the following pre processing:
     •  Tokenization
     • Removal of punctuation
     • Stemming (keeping only the stem of the word: fog -> fog, fogginess -> fog, foggy->fog)
