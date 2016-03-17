@@ -15,6 +15,8 @@ Through this project, we have explained in detail, the methodology and tools use
   * <u><b> Part 2- Data Wrangling- Adding Latitudes and Longitudes using Google Maps Geocoding API.ipynb </u></b>: Adding Geolocation data to the crawled dataset from Part 1, using [Google Maps Geocoding API] (https://developers.google.com/maps/documentation/geocoding/intro)
   * <u><b> Part 3- Aircrash Analytics- Data Mining.ipynb </u></b>: The aim of this IPython Notebook is to perform some exploratory data analysis on the wrangled dataset that we have obtained. We're gonna use Pandas for the most of it, and some SciPy and Scikit Learn towards the end. 
 
+## System Architecture: 
+<img src = "System_Architecture.PNG">
 ENJOY!!
 
 ## REQUIREMENTS:
