@@ -8,11 +8,11 @@ Flying is considered as the safest way to travel as of today. But has that alway
 
 The aviation industry is a mature industry, and is more than a hundred years old. So, there exists a lot of data in this field, especially aircraft crash data. This makes it very interesting, as we were able to grab data that helped us analyse the state of the aircraft safety over a period of an entire century!
 
-Through this project, we have explained in detail, the methodology and tools used for implementing the data pipeline, right from getting the data in HTML format, analyzing it, and to converting it into attractive visualizations can be viewed thorough our website www.sykdesigns.com/GE2324
+Through this project, we have explained in detail, the methodology and tools used for implementing the data pipeline, right from getting the data in HTML format, analyzing it, and to converting it into attractive visualizations can be viewed thorough our website www.sykdesigns.com/GE2324. (Desktop browser recommended)(using arrow keys for navigation guarantees a good user  experience).
 
 ##  Structure: 
 * The project is divided logically into three parts:
-  * <u><b> Part 1- Data Collection - Crawling Flight Crash Data.ipynb </u></b>: Scripts to crawl the website www.planecrash.info/database.htm. This can be used as a skeleton to crawl urls that have a pattern.
+  * <u><b> Part 1- Data Collection - Crawling Flight Crash Data.ipynb </u></b>: Scripts to crawl the website www.planecrashinfo.com/database.htm. This can be used as a skeleton to crawl urls that have a pattern.
   * <u><b> Part 2- Data Wrangling- Adding Latitudes and Longitudes using Google Maps Geocoding API.ipynb </u></b>: Adding Geolocation data to the crawled dataset from Part 1, using [Google Maps Geocoding API] (https://developers.google.com/maps/documentation/geocoding/intro)
   * <u><b> Part 3- Aircrash Analytics- Data Mining.ipynb </u></b>: The aim of this IPython Notebook is to perform some exploratory data analysis on the wrangled dataset that we have obtained. We're gonna use Pandas for the most of it, and some SciPy and Scikit Learn towards the end. 
 
@@ -34,7 +34,7 @@ Notebook for interactive analysis, and SciPy for scientific and statistical func
 Fatalities and crashes per year, fatalities and crashes trends by decade, fatalities and crashes trends by 5-year periods were fairly easy to calculate. They were done by using basic SQL-like group by and sum statements. Please refer to the python code for reference.
 
 * <b>CORRELATION COEFFICIENT SCATTER PLOT AND MATRIX:</b>
-For this, we used python’s scatter plot matrix, which gave us an idea of which variables were correlated. We found that there was near perfect correlation between the total number fatalities on a plane and the number of passengers(excluding the crew). This visualization can be found on the [website]()
+For this, we used python’s scatter plot matrix, which gave us an idea of which variables were correlated. We found that there was near perfect correlation between the total number fatalities on a plane and the number of passengers(excluding the crew). This visualization can be found on the [website](http://sykdesigns.com/GE2324/#8thPage/1)
 
 * <b>AIRCRAFT MANUFACTURERS VS TOTAL NUMBER OF CRASHES:</b>
 For this step, we took only the aircraft type column of the data, cleaned it up (lower casing, removal of numbers, etc.). and grouped it together. We then kept the brand name and discarded the aircraft model number, by using our own algorithm (again, provided in the code that is submitted along with this document). After this, we used an SQL-like COUNT(*) function and got the total air crash count.
