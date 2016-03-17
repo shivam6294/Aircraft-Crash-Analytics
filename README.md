@@ -2,6 +2,7 @@
 #### Authors: 
  * Shivam Gaur (shivam6294@gmail.com) (Data Collection, Data Wrangling and Data Mining)
  * Sohail Yar Khan (sohailykhan94@gmail.com) (Web Design,Graphic Design and Web Infrastructure)
+
 #### Website: www.sykdesigns.com/GE2324
 Flying is considered as the safest way to travel as of today. But has that always been the case? Was flying as safe in the 20th century? Most of us have boarded an airplane manufactured by Boeing and Airbus, which are two of the biggest and most popular commercial flight manufacturers in the world. How many planes that have been manufactured by them have crashed in the past? What were some of the most common reasons for the crashes? It is questions like these that fueled our curiosity and interest towards this project- Aircraft crash analytics- a visual exploration of aircraft crashes since 1908.
 
