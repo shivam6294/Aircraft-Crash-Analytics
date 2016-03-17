@@ -29,19 +29,19 @@ Notebook for interactive analysis, and SciPy for scientific and statistical func
 
 ## Data Mining highlights:
 
-* FATALITIES AND CRASHES BY TIME (YEAR, DECADE, 5 YEAR PERIODS)
+* <b>FATALITIES AND CRASHES BY TIME (YEAR, DECADE, 5 YEAR PERIODS):</b>
 Fatalities and crashes per year, fatalities and crashes trends by decade, fatalities and crashes trends by 5-year periods were fairly easy to calculate. They were done by using basic SQL-like group by and sum statements. Please refer to the python code for reference.
 
-* CORRELATION COEFFICIENT SCATTER PLOT AND MATRIX
+* <b>CORRELATION COEFFICIENT SCATTER PLOT AND MATRIX:</b>
 For this, we used python’s scatter plot matrix, which gave us an idea of which variables were correlated. We found that there was near perfect correlation between the total number fatalities on a plane and the number of passengers(excluding the crew). This visualization can be found on the [website]()
 
-* AIRCRAFT MANUFACTURERS VS TOTAL NUMBER OF CRASHES
+* <b>AIRCRAFT MANUFACTURERS VS TOTAL NUMBER OF CRASHES:</b>
 For this step, we took only the aircraft type column of the data, cleaned it up (lower casing, removal of numbers, etc.). and grouped it together. We then kept the brand name and discarded the aircraft model number, by using our own algorithm (again, provided in the code that is submitted along with this document). After this, we used an SQL-like COUNT(*) function and got the total air crash count.
 
-* AIRCRAFT CARRIERS VS TOTAL NUMBER OF CRASHES
+* <b>AIRCRAFT CARRIERS VS TOTAL NUMBER OF CRASHES:</b>
 For this step, our process was similar to the step above, with the exception of using the aircraft carrier column instead of aircraft type column.
 
-* TEXT MINING:
+* <b>TEXT MINING:</b>
 In the dataset, we found that there is a field called summary that contains a small write up about the crash. We thought that we could use this for text mining, and cluster similar air crashes.
 
 First, we performed the following pre processing:
